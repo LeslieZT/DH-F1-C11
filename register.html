@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/7b332efbd3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="discount-message">
+        <h2>20% de descuento en todos los productos!</h2>
+      </div>
+      <div class="head-banner">
+        <img src="./img/logo 1.svg" alt="logo" />
+        <h1>Nombre Tiendas</h1>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="register-container">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+        <form method="post" action="#" class="register-form">
+          <div class="form-content">
+            <fieldset class="column-form left-column-form">
+              <label for="name">*Nombre</label><br>
+              <input type="text" id="name" name="name" class="common-input"/><br>
+              <br/>
+              <label for="date">Fecha</label><br>
+              <input type="date" id="date" name="date" class="common-input"/><br>
+              <br />
+              <textarea
+                class="common-textarea"
+                id="description"
+                name="description"
+                rows="10"
+                cols="50"
+                placeholder="Description"
+              ></textarea>
+            </fieldset>
+
+            <fieldset class="column-form">
+              <label for="specie-select">*Especie</label><br>
+              <select class="specie-select common-select" id="specie-select">
+                <option selected>Especie</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select><br>             
+              <br>
+              <label for="doc">Agregar Foto</label><br>
+              <input type="file" id="doc" name="doc" class="input-doc" accept=".jpg, .png .svg, jpeg"/><br>
+              <br>
+              <p>Poderes</p>
+              <input type="checkbox" id="poderes1" name="poderes" value="Volar">
+              <label for="poderes1">Volar</label><br>
+              <input type="checkbox" id="poderes2" name="poderes" value="SuperInteligencia">
+              <label for="poderes2">SuperInteligencia</label><br>
+              <input type="checkbox" id="poderes3" name="poderes" value="Vista de rayo láser">
+              <label for="poderes3">Vista de rayo láser</label><br>
+              <input type="checkbox" id="poderes4" name="poderes" value="Billetera gorda">
+              <label for="poderes4">Billetera gorda</label><br>
+              <br>
+              <hr>
+              <br>
+              <p>Tipo de personaje</p>
+              <input type="radio" id="personaje1" name="personaje" value="Héroe / Heroina">
+              <label for="personaje1">Héroe / Heroina</label><br>              
+              <input type="radio" id="personaje2" name="personaje" value="Villano / Villana">
+              <label for="personaje2">Villano / Villana</label><br>
+            </fieldset>
+          </div>
+          <div class="btns-conatiener">
+            <input type="submit" value="Añadir" id="btn-submit"/>
+          </div>
+          
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados a FRONT END 1</p>
+    </footer>
+  </body>
+</html>
